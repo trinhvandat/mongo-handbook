@@ -5,6 +5,7 @@ import { rabbitmqLessons } from './rabbitmq-lessons'
 import { javaCoreLessons } from './java-core-lessons'
 import { sqlLessons } from './sql-lessons'
 import { monitoringLessons } from './monitoring-lessons'
+import { authLessons } from './auth-lessons'
 
 export const courses = [
   {
@@ -62,5 +63,13 @@ export const courses = [
     description: 'Foundation to Expert - Observability & SRE Practices',
     color: '#f43f5e',
     lessons: monitoringLessons
+  },
+  {
+    id: 'auth',
+    name: 'Auth & Security',
+    icon: '🔐',
+    description: 'Foundation to Expert - JWT, OAuth2, OIDC, SAML & Zero Trust',
+    color: '#10b981',
+    lessons: authLessons
   }
 ]
