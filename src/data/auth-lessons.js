@@ -3100,7 +3100,7 @@ spring:
         default-context: my-app
 
 // Use secrets as regular Spring properties
-@Value("${database.password}")
+@Value("\${database.password}")
 private String dbPassword;  // Fetched from Vault at runtime
 \`\`\`
 

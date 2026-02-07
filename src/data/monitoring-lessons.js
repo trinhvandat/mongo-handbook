@@ -2656,7 +2656,7 @@ filebeat.inputs:
       - /var/lib/docker/containers/*/*.log
     processors:
       - add_kubernetes_metadata:
-          host: ${NODE_NAME}
+          host: \${NODE_NAME}
 
 output.logstash:
   hosts: ["logstash:5044"]
@@ -3518,8 +3518,8 @@ config:
   bucket: thanos-metrics
   endpoint: s3.amazonaws.com
   region: ap-southeast-1
-  access_key: ${AWS_ACCESS_KEY_ID}
-  secret_key: ${AWS_SECRET_ACCESS_KEY}
+  access_key: \${AWS_ACCESS_KEY_ID}
+  secret_key: \${AWS_SECRET_ACCESS_KEY}
   sse_config:
     type: SSE-S3
 
