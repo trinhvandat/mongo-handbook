@@ -2,6 +2,7 @@ import { lessons as mongoLessons } from './lessons'
 import { kafkaLessons } from './kafka-lessons'
 import { javaMultithreadLessons } from './java-multithread-lessons'
 import { rabbitmqLessons } from './rabbitmq-lessons'
+import { javaCoreLessons } from './java-core-lessons'
 
 export const courses = [
   {
@@ -35,5 +36,13 @@ export const courses = [
     description: 'Foundation to Expert - Message Broker & AMQP',
     color: '#7c3aed',
     lessons: rabbitmqLessons
+  },
+  {
+    id: 'java-core',
+    name: 'Java OOP',
+    icon: '☕',
+    description: 'Foundation to Expert - OOP & Collections Framework',
+    color: '#0ea5e9',
+    lessons: javaCoreLessons
   }
 ]
